@@ -1,0 +1,25 @@
+{
+  "name": "express-rpc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf ./lib",
+    "prebuild": "npm run clean",
+    "build": "rollup --config rollup.config.js",
+    "start": "node ./lib/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.77.3"
+  }
+}
